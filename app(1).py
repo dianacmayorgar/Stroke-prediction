@@ -146,11 +146,12 @@ if st.button("Predict Stroke Risk"):
     )
     
     # Expander for each model's interpretability
+    # Expander para Logistic Regression LIME Interpretation
     with st.expander("Logistic Regression LIME Interpretation", expanded=False):
         exp1 = explainer.explain_instance(input_data[0], logistic_regression_model.predict_proba)
         fig1 = exp1.as_pyplot_figure()
         st.pyplot(fig1)
-        
+
     with st.expander("Naive Bayes LIME Interpretation", expanded=False):
         exp2 = explainer.explain_instance(input_data[0], naive_bayes_model.predict_proba)
         fig2 = exp2.as_pyplot_figure()
