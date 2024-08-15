@@ -4,7 +4,7 @@ This is the Group Project Big Data Visualization in the lambton College
 
 ## Description
 
-This application predicts the likelihood of a stroke based on various input features such as age, hypertension, heart disease, and more. The prediction is generated using five machine learning models: Logistic Regression, Naive Bayes, SVM, Decision Tree, and Random Forest. The application also includes interpretability features using **LIME and SHAP** to explain the predictions made by each model.
+This application predicts the likelihood of a stroke based on various input features such as age, hypertension, heart disease, and more. The prediction is generated using five machine learning models: Logistic Regression, Naive Bayes, SVM, Decision Tree, and Random Forest. The application also includes interpretability features using **LIME** to explain the predictions made by each model.
 
 ## Features
 - Interactive form to input patient data for stroke prediction.
@@ -64,7 +64,7 @@ This application predicts the likelihood of a stroke based on various input feat
 Once the application is running, you can:
 - Enter patient details such as age, hypertension status, heart disease, etc.
 - View predictions from five different machine learning models.
-- Explore model interpretability with **LIME and SHAP** to understand which factors contributed to each model's prediction.
+- Explore model interpretability with **LIME** to understand which factors contributed to each model's prediction.
 - Interact with the embedded Power BI dashboard for additional insights.
 
 ## Dependencies
