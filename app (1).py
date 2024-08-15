@@ -1,16 +1,19 @@
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+
 import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from tensorflow.keras.models import load_model
+import joblib  # Import joblib for scikit-learn models
 from lime import lime_tabular
 
 # Load the pre-trained models
-logistic_regression_model = load_model('models/Logistic_Regression.h5')
-naive_bayes_model = load_model('models/Naive_Bayes.h5')
-svm_model = load_model('models/SVM.h5')
-decision_tree_model = load_model('models/Decision_Tree.h5')
-random_forest_model = load_model('models/Random_Forest.h5')
+logistic_regression_model = joblib.load('models/Logistic_Regression.pkl')  # scikit-learn model
+naive_bayes_model = joblib.load('models/Naive_Bayes.pkl')  # scikit-learn model
+svm_model = joblib.load('models/SVC.pkl')  # scikit-learn model
+decision_tree_model = joblib.load('models/Decision_Tree.pkl')  # scikit-learn model
+random_forest_model = joblib.load('models/Random_Forest.pkl')  # scikit-learn model
 
 # Load dataset for mean and mode calculation
 @st.cache
