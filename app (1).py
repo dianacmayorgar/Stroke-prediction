@@ -6,11 +6,11 @@ from tensorflow.keras.models import load_model
 from lime import lime_tabular
 
 # Load the pre-trained models
-logistic_regression_model = load_model('models/modelo1.h5')
-naive_bayes_model = load_model('models/modelo2.h5')
-svm_model = load_model('models/modelo3.h5')
-decision_tree_model = load_model('models/modelo4.h5')
-random_forest_model = load_model('models/modelo5.h5')
+logistic_regression_model = load_model('models/Logistic_Regression.h5')
+naive_bayes_model = load_model('models/Naive_Bayes.h5')
+svm_model = load_model('models/SVM.h5')
+decision_tree_model = load_model('models/Decision_Tree.h5')
+random_forest_model = load_model('models/Random_Forest.h5')
 
 # Load dataset for mean and mode calculation
 @st.cache
