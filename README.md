@@ -89,4 +89,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 - [LIME: Local Interpretable Model-agnostic Explanations](https://github.com/marcotcr/lime)
 - [Streamlit](https://www.streamlit.io/)
-- Data used for training sourced from [source name if applicable]
+- Data used for training sourced from Kaggle
