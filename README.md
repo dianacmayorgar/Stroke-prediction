@@ -14,17 +14,17 @@ This application predicts the likelihood of a stroke based on various input feat
 
 ## Project Structure
 ```
-├── app.py                     # Main Streamlit app
-├── models/                    # Pre-trained machine learning models
-│   ├── Logistic_Regression.h5             # Logistic Regression model
-│   ├── Naive_Bayes.h5             # Naive Bayes model
-│   ├── SVM.h5             # SVM model
-│   ├── Decision_Tree.h5             # Decision Tree model
-│   └── Random_Forest.h5             # Random Forest model
-├── data/                      # Dataset folder
-│   └── train_2v-clean.csv     # Cleaned dataset
-├── requirements.txt           # List of dependencies
-├── README.md                  # Project documentation
+├── app.py                        # Main Streamlit app
+├── models/                       # Pre-trained machine learning models
+│   ├── Logistic_Regression.pkl   # Logistic Regression model
+│   ├── Naive_Bayes.pkl           # Naive Bayes model
+│   ├── SVM.pkl                   # SVM model
+│   ├── Decision_Tree.pkl         # Decision Tree model
+│   └── Random_Forest.pkl         # Random Forest model
+├── data/                         # Dataset folder
+│   └── train_2v-clean.csv        # Cleaned dataset
+├── requirements.txt              # List of dependencies
+├── README.md                     # Project documentation
 ```
 
 ## Installation
