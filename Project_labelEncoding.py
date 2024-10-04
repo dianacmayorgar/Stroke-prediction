@@ -42,7 +42,7 @@ def remove_duplicates(df):
     df.reset_index(drop=True, inplace=True)
 
 def main():
-    filepath = 'train_2v.csv'  # Adjust the file path as needed
+    filepath = 'train_2v.csv' 
     df = load_data(filepath)
 
     # Step 1: Explore the data
